@@ -69,6 +69,16 @@ Tab:AddTextbox({
 })
 
 
+Tab:AddTextbox({
+	Name = "Fov",
+	Default = "Number",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Workspace.CurrentCamera.FieldOfView = Value 
+	end	  
+})
+
+
 Tab:AddButton({
 	Name = "Shiftlock",
 	Callback = function()
